@@ -81,6 +81,13 @@ default-features = false
 path = '../pallets/template'
 version = '3.0.0'
 
+[dependencies.pallet-msg]
+default-features = false
+git = 'ssh://git@github.com/simonsso/substrate-pallet-messenger.git'
+branch = 'for_master'
+# path = "../../substrate-pallet-messenger"
+version = '3.0.0'
+
 [dependencies.pallet-timestamp]
 default-features = false
 git = 'https://github.com/paritytech/substrate.git'
@@ -205,6 +212,7 @@ std = [
     'pallet-randomness-collective-flip/std',
     'pallet-sudo/std',
     'pallet-template/std',
+    'pallet-msg/std',
     'pallet-timestamp/std',
     'pallet-transaction-payment-rpc-runtime-api/std',
     'pallet-transaction-payment/std',
